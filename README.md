@@ -1,3 +1,3 @@
 # lms-system
 library management system 
-print(welcome to maddy library)
+"welcome to maddy library"
