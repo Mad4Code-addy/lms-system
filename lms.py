@@ -29,14 +29,17 @@ Select any option from below:
 2:for borrowing book
 3:for returning book
 4:to exit''')
-    a=int(input("enter any option: "))
-    if a==1:
-        lms.avlbooks()
-    elif a==2:
-        lms.borrowbook()
-    elif a==3:
-        lms.returnbook()
-    elif a==4:
-        exit()
-    else:
-        print("enter valid input")
+    try:    
+        a=int(input("enter any option: "))
+        if a==1:
+            lms.avlbooks()
+        elif a==2:
+            lms.borrowbook()
+        elif a==3:
+            lms.returnbook()
+        elif a==4:
+            exit()
+        else:
+            print("please choose from the option above")
+    except Exception as e:
+        print("Your input value can't be taken, Please enter a valid integer")
